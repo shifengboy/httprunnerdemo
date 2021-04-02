@@ -71,12 +71,11 @@ class TestCaseAddContacts(HttpRunner):
                     "_d2st": "a5266798",
                 }
             )
-            # .teardown_hook('${yaml_dump("/Users/chenshifeng/MyCode/PythonCode/httprunnerdemo/testcases/work_weixin/contacts.yml","$uid")}')
             .extract()
             .with_jmespath("body.data.vid","uid")
             .validate()
             .assert_equal("status_code", 200)
-            .assert_not_null("body.data.vid")
+            # .assert_not_null("body.data.vid")
         ),
     ]
 

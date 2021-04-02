@@ -1,0 +1,55 @@
+[32m2021-04-02 23:39:43.017[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m450[0m - [1mStart to run testcase: 添加成员, TestCase ID: 28d5709d-6bb0-44e0-bcb3-6508e6fbc680[0m
+[32m2021-04-02 23:39:43.018[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 添加成员 >>>>>>[0m
+[32m2021-04-02 23:39:43.489[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.12.102, Port: 58323[0m
+[32m2021-04-02 23:39:43.489[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 113.96.237.15, Port: 443[0m
+[32m2021-04-02 23:39:43.490[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : https://work.weixin.qq.com/wework_admin/contacts/saveMember?method=create&partyid=1688850882286378&lang=zh_CN&f=json
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "referer": "https://work.weixin.qq.com/wework_admin/frame",
+    "HRUN-Request-ID": "HRUN-28d5709d-6bb0-44e0-bcb3-6508e6fbc680-983018",
+    "Cookie": "wwrtx.sid=LByZgHuduBrwXVen3sfhf_fWscOo-fBp5eYWklwTZz0wot2mG6ZTh5CQ4to6IOC3",
+    "Content-Length": "639",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {
+    "wwrtx.sid": "LByZgHuduBrwXVen3sfhf_fWscOo-fBp5eYWklwTZz0wot2mG6ZTh5CQ4to6IOC3"
+}
+body     : __member=true&party_list%5B%5D=1688850882286378&country_code=86&avatar=&username=%E7%94%AB%E5%B0%89%E7%8E%89%E5%8F%AF&english_name=%E5%B0%8F%E7%94%AB%E5%B0%89%E7%8E%89%E5%8F%AF&acctid=1244105175&gender=2&mobile=13037777151&ext_tel=&alias=&xcx_corp_address=&mainparty_id=&partyid=1688850882286378&party_check=0&position=&identity_stat=0&extern_position=&sendInvite=on&hide_mobile=false&extern_position_info%5Bb_syn_inner_position%5D=true&extern_position_info%5Bextern_position%5D=&active_biz=false&switch_active_biz=false&disable_biz=false&switch_disable_biz=false&bind_stat=0&external_corp_info=&ignore_abnormal_mobile=false&_d2st=a5266798
+[0m
+[32m2021-04-02 23:39:43.490[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Fri, 02 Apr 2021 15:39:47 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "35",
+    "Connection": "keep-alive",
+    "Set-Cookie": "wwrtx.i18n_lan=zh; Domain=.work.weixin.qq.com; Path=/; Expires=Sun, 02 May 2021 15:39:47 GMT, wwrtx.refid=2966104262387817; Domain=work.weixin.qq.com; Path=/; HttpOnly, wwrtx.vst=3z0fuomVaLMTYKMinMmCYFr4ol73lYCLmsxmfzk-44yFnzB0my3grG_5PuWe916kUHCcMNF5Tiuzd4htYkWmYroPjjQbx2iRnqDL0KcTNdqiIOVeR6tUZhavGScOtEm6BwTqq-ZypfP4CnkKsWy2oFZOQxpZZNtA9lUM2z5Ee9yOIIv0-R0y7g9g3OwR0R0K3UkQG2WKEeOi0Rs3m7MZRAuuT5UZbfL4MXEcN0J7mIKmGwj7FmzK-zWoYjEC8F03IexVBha7MYIsNjUxRZ699w; Domain=.work.weixin.qq.com; Path=/; HttpOnly",
+    "ETag": "W/\"23-8lgy7x4vkjuHOgQMM9KMOYHrwaE\""
+}
+cookies  : {
+    "wwrtx.i18n_lan": "zh",
+    "wwrtx.refid": "2966104262387817",
+    "wwrtx.vst": "3z0fuomVaLMTYKMinMmCYFr4ol73lYCLmsxmfzk-44yFnzB0my3grG_5PuWe916kUHCcMNF5Tiuzd4htYkWmYroPjjQbx2iRnqDL0KcTNdqiIOVeR6tUZhavGScOtEm6BwTqq-ZypfP4CnkKsWy2oFZOQxpZZNtA9lUM2z5Ee9yOIIv0-R0y7g9g3OwR0R0K3UkQG2WKEeOi0Rs3m7MZRAuuT5UZbfL4MXEcN0J7mIKmGwj7FmzK-zWoYjEC8F03IexVBha7MYIsNjUxRZ699w"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "data": {
+        "vid": "1688850882733542"
+    }
+}
+[0m
+[32m2021-04-02 23:39:43.491[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m217[0m - [1mstatus_code: 200, response_time(ms): 470.67 ms, response_length: 0 bytes[0m
+[32m2021-04-02 23:39:43.491[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'uid': '1688850882733542'}[0m
+[32m2021-04-02 23:39:43.491[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-02 23:39:43.491[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 添加成员 <<<<<<
+[0m
+[32m2021-04-02 23:39:43.492[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: /Users/chenshifeng/MyCode/PythonCode/httprunnerdemo/logs/28d5709d-6bb0-44e0-bcb3-6508e6fbc680.run.log[0m

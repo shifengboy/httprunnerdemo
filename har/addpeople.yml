@@ -1,0 +1,95 @@
+config:
+    name: testcase description
+    variables: {}
+    verify: false
+teststeps:
+-   name: /wework_admin/contacts/saveMember
+    request:
+        cookies:
+            Hm_lpvt_9364e629af24cb52acc78b43e8c9f77d: '1617198240'
+            Hm_lvt_9364e629af24cb52acc78b43e8c9f77d: 1615220079,1615220095,1617198240
+            RK: p8RVgZKAUd
+            _ga: GA1.2.1306355502.1603284081
+            _gid: GA1.2.1630890319.1617198240
+            iip: '0'
+            mobileUV: 1_1657426fdb0_29ae0
+            o_cookie: '1162704960'
+            pac_uid: '1_1162704960'
+            pgv_info: ssid=s7533207771
+            pgv_pvi: '6922481664'
+            pgv_pvid: '8707570602'
+            ptcz: eee2052bc1c9659f234b207682e7ad0d970699f1e2ef15a03d68400c402983fa
+            tvfe_boss_uuid: 9387b03e6aa8d66d
+            uin: o1162704960
+            ww_rtkey: 2oqdibf
+            wwrtx.c_gdpr: '0'
+            wwrtx.d2st: a5266798
+            wwrtx.i18n_lan: zh
+            wwrtx.ltype: '1'
+            wwrtx.ref: direct
+            wwrtx.refid: '705613171878595'
+            wwrtx.sid: LByZgHuduBrwXVen3sfhfyttqUNG0nNWre-klWqHeKC13lenYXJjBoDbe7AlN1M1
+            wwrtx.vid: '1688850882282754'
+            wwrtx.vst: cDy9PWtzRo-Ag5fjB4f4FMPAnso5SsKkztmJO3O4DYuwgjd1dgxFlzeoJ0Wbr4Udep8deMdbZV3suA6rPWnNWpVxLcQSshlcaKUog4bPiZUWDqzpj4VHRCNIGBMpNu0ih5YheAR_6SG9L2acE9th577oW5Kn_3E28kH4N0B0gt1vLHNdrO4PNISwQ_shM7OIiPdniy37lOtGWHdNHnOZWqo7EX3hOYPt5tCxF3Wk1_1kqz-op066Q5vtc_Z-tg9LTZ8ciuBUGXiLeXcUy4w1_Q
+            wxpay.corpid: '1970325033002201'
+            wxpay.vid: '1688850882282754'
+        data:
+            __member: 'true'
+            __node_icon: jstree-people-icon
+            _d2st: a5266798
+            acctid: laodeng001
+            active_biz: 'false'
+            alias: ''
+            avatar: ''
+            bind_stat: '0'
+            country_code: '86'
+            disable_biz: 'false'
+            english_name: 小邓001
+            ext_tel: ''
+            extern_position: ''
+            extern_position_info[b_syn_inner_position]: 'true'
+            extern_position_info[extern_position]: ''
+            external_corp_info: ''
+            gender: '1'
+            hide_mobile: 'false'
+            identity_stat: '0'
+            ignore_abnormal_mobile: 'false'
+            mainparty_id: ''
+            mobile: '13400000001'
+            party_check: '0'
+            party_list[]: '1688850882286378'
+            partyid: '1688850882286378'
+            position: ''
+            sendInvite: 'on'
+            switch_active_biz: 'false'
+            switch_disable_biz: 'false'
+            username: 老邓001
+            xcx_corp_address: ''
+        headers:
+            accept: application/json, text/javascript, */*; q=0.01
+            accept-encoding: gzip, deflate, br
+            accept-language: zh-CN,zh;q=0.9
+            content-length: '631'
+            content-type: application/x-www-form-urlencoded
+            origin: https://work.weixin.qq.com
+            referer: https://work.weixin.qq.com/wework_admin/frame
+            sec-fetch-dest: empty
+            sec-fetch-mode: cors
+            sec-fetch-site: same-origin
+            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36
+            x-requested-with: XMLHttpRequest
+        method: POST
+        params:
+            ajax: '1'
+            f: json
+            lang: zh_CN
+            method: create
+            partyid: '1688850882286378'
+            random: '0.38567004720178444'
+            timeZoneInfo[zone_offset]: '-8'
+        url: https://work.weixin.qq.com/wework_admin/contacts/saveMember
+    validate:
+    -   eq:
+        - status_code
+        - 200
