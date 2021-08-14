@@ -10,7 +10,7 @@ from base.caeate_name import CreateName
 
 
 class Base():
-    wwrtx_sid = "LByZgHuduBrwXVen3sfhf_fWscOo-fBp5eYWklwTZz0wot2mG6ZTh5CQ4to6IOC3"
+    wwrtx_sid = "LByZgHuduBrwXVen3sfhf4wCRDsw3JtC7D4g1YjzuU4Ic46cyPEI64XzAS5prykU"
 
     def get_name_and_sex(self):
         createname = CreateName()

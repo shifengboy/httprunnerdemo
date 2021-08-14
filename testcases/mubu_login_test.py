@@ -8,18 +8,17 @@ from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 class TestCaseMubuLongin(HttpRunner):
     config = (
         Config("testcase description") \
-        .base_url("https://api2.${host}") \
-        .verify(False) \
-        .variables(**{
-        "data_unique_id": "63743813-8230-4b9c-bb5a-f42416b1bbbf",
-        "csrf_token": "bd41907d-ce86-41a5-a207-7b3d76aba3ab",
-        "host": "${get_test_host()}",
-        "phone": "13966566216",
-        "password": "chen123789",
-    })
-    .export("Jwt_Token","user_persistence","userId")
+            .base_url("https://api2.${host}") \
+            .verify(False) \
+            .variables(**{
+            "data_unique_id": "63743813-8230-4b9c-bb5a-f42416b1bbbf",
+            "csrf_token": "bd41907d-ce86-41a5-a207-7b3d76aba3ab",
+            "host": "${get_test_host()}",
+            "phone": "13966566216",
+            "password": "chen123789",
+        })
+            .export("Jwt_Token", "user_persistence", "userId")
     )
-
 
     teststeps = [
         Step(

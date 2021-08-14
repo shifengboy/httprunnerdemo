@@ -7,13 +7,15 @@ from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 from testcases.work_weixin.base_config import Base
 
 base = Base()
-names = base.get_name_and_sex()
-username = names[0]
-gender = names[1]
+
 
 class TestCaseAddContacts(HttpRunner):
 
-    config = Config("添加成员").verify(False)
+
+    config = Config("添加成员").verify(False)\
+        .variables(**{
+        "username":"${get_name()}",
+    })
 
     teststeps = [
         Step(
@@ -43,10 +45,10 @@ class TestCaseAddContacts(HttpRunner):
                     "party_list[]": "1688850882286378",
                     "country_code": "86",
                     "avatar": "",
-                    "username": username,
-                    "english_name": "小"+username,
+                    "username": "$username",
+                    "english_name": "小"+"$username",
                     "acctid": "${get_random_number(10)}",
-                    "gender": gender,
+                    "gender": 1,
                     "mobile": "${get_phone_number()}",
                     "ext_tel": "",
                     "alias": "",
@@ -75,7 +77,7 @@ class TestCaseAddContacts(HttpRunner):
             .with_jmespath("body.data.vid","uid")
             .validate()
             .assert_equal("status_code", 200)
-            # .assert_not_null("body.data.vid")
+            .assert_equal("body.result.errCode", None)
         ),
     ]
 

@@ -3,12 +3,10 @@ import time
 import uuid
 import os
 
-import yaml
 from httprunner import __version__
 from httprunner.response import ResponseObject
 
 from base.caeate_name import CreateName
-
 
 def get_httprunner_version():
     return __version__
@@ -50,6 +48,10 @@ def get_phone_number():
 
 def get_name_and_sex():
     name = CreateName()
+    return name.random_name_and_sex()
+
+def get_name():
+    name = CreateName()
     return name.random_name()
 
 
@@ -57,5 +59,6 @@ def get_random_number(digit: int):
     return "".join(random.choice("0123456789") for i in range(digit))
 
 
+
 if __name__ == '__main__':
-    print(get_random_number(10))
+    print(get_name_and_sex())
